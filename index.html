@@ -1,3 +1,141 @@
 <!DOCTYPE html>
-<html>
-    </html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joud Aljabri - Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Joud</div>
+            <button class="theme-toggle" id="themeToggle">
+                <span class="sun">☀️</span>
+                <span class="moon">🌙</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- About Me -->
+    <section id="about" class="hero">
+        <div class="container">
+            <!-- Decorative elements -->
+            <img src="assets/images/51.png" class="deco-element deco-1" alt="sparkle">
+            <img src="assets/images/52.png" class="deco-element deco-2" alt="sparkle1">
+            <img src="assets/images/53.png" class="deco-element deco-3" alt="sparkle2">
+            
+            <div class="hero-content">
+                <div class="greeting" id="greeting"></div>
+                <h1>I am <span class="highlight-pink">Joud</span></h1>
+                <h1><span class="highlight-green">Aljabri</span></h1>
+                
+                <p class="intro">
+                     a passionate software engineering student & mobile-web developer. 
+                    I love creating beautiful and functional user-centered tech products. 
+                    Currently learning full-stack development!
+                </p>
+                
+                <div class="cta-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('projects')">View Projects</button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('contact')">Contact Me</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            
+            <div class="projects-grid">
+                <!-- Project Card 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <!-- project image -->
+                        <img src="assets/images/bond.png" alt="Project 1">
+                    </div>
+                    <div class="project-content">
+                        <h3>Bond Mobile App</h3>
+                        <p>
+                            <!-- Short description of project -->
+                            Bond is a simple, social habit-tracking app ✨ Bond turns your daily goals into shared experiences inside Rooms, where you and your friends, family, or teammates can support each other, check in, and keep your streaks alive together.
+                        </p>
+                        <div class="project-tags">
+                            <!-- technologies used -->
+                            <span class="tag">Flutter</span>
+                            <span class="tag">Dart</span>
+                            <span class="tag">Firebase</span>
+                
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/database.png" alt="Project 2">
+                    </div>
+                    <div class="project-content">
+                        <h3>Horse Riding Database System</h3>
+                        <p>
+                            <!-- Short description of project -->
+                            This project implements a Horse Racing Database System using MySQL as the backend and a Python (Streamlit) interface as the frontend.
+                        </p>
+                        <div class="project-tags">
+                            <!-- technologies used -->
+                            <span class="tag">MySQL</span>
+                            <span class="tag">API</span>
+                            <span class = "tag"> Streamlit (Python)</span>
+                        </div>
+                    </div>
+                </div>
+
+               
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <h4 class="section-title-name">With Joud!</h4>  <!-- fix -->
+            
+            <div class="contact-content">
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Your name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required rows="5" placeholder="Your message here..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <div id="formMessage" class="form-message"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Joud Aljabri. Built with HTML, CSS & JavaScript</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
